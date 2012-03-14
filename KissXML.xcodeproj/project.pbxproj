@@ -31,7 +31,6 @@
 		A72ABC94151138AA00B78A14 /* DDXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = A72ABC7C151138AA00B78A14 /* DDXMLNode.m */; };
 		A72ABC95151138AA00B78A14 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A72ABC7E151138AA00B78A14 /* DDXMLPrivate.h */; };
 		A72ABC96151138AA00B78A14 /* DDXMLPrivate.h in Headers */ = {isa = PBXBuildFile; fileRef = A72ABC7E151138AA00B78A14 /* DDXMLPrivate.h */; };
-		A7DDECC71502932400AD274C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7DDECC61502932400AD274C /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,24 +53,6 @@
 		A7DDECCA1502932400AD274C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		A7DDECCB1502932400AD274C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		A7D9E4F41501A6A20031D4FA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A7DDECC11502932400AD274C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A7DDECC71502932400AD274C /* Cocoa.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		A72ABC6F151138AA00B78A14 /* KissXML */ = {
@@ -193,7 +174,6 @@
 			buildConfigurationList = A7D9E5041501A6A20031D4FA /* Build configuration list for PBXNativeTarget "KissXMLiOS" */;
 			buildPhases = (
 				A7D9E4F31501A6A20031D4FA /* Sources */,
-				A7D9E4F41501A6A20031D4FA /* Frameworks */,
 				A7D9E4F51501A6A20031D4FA /* Headers */,
 			);
 			buildRules = (
@@ -210,7 +190,6 @@
 			buildConfigurationList = A7DDECD21502932400AD274C /* Build configuration list for PBXNativeTarget "KissXMLOSX" */;
 			buildPhases = (
 				A7DDECC01502932400AD274C /* Sources */,
-				A7DDECC11502932400AD274C /* Frameworks */,
 				A7DDECC21502932400AD274C /* Headers */,
 			);
 			buildRules = (
