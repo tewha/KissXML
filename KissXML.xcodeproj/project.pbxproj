@@ -47,8 +47,8 @@
 		A72ABC7B151138AA00B78A14 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		A72ABC7C151138AA00B78A14 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		A72ABC7E151138AA00B78A14 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
-		A7D9E4F71501A6A20031D4FA /* libiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7DDECC41502932400AD274C /* libOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D9E4F71501A6A20031D4FA /* libKissXMLiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKissXMLiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DDECC41502932400AD274C /* libKissXMOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKissXMLOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DDECC61502932400AD274C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		A7DDECC91502932400AD274C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A7DDECCA1502932400AD274C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -129,8 +129,8 @@
 		A7D9E4F81501A6A20031D4FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7D9E4F71501A6A20031D4FA /* libiOS.a */,
-				A7DDECC41502932400AD274C /* libOSX.a */,
+				A7D9E4F71501A6A20031D4FA /* libKissXMLiOS.a */,
+				A7DDECC41502932400AD274C /* libKissXMLOSX.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,7 +202,7 @@
 			);
 			name = KissXMLiOS;
 			productName = Model;
-			productReference = A7D9E4F71501A6A20031D4FA /* libiOS.a */;
+			productReference = A7D9E4F71501A6A20031D4FA /* libKissXMLiOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A7DDECC31502932400AD274C /* KissXMLOSX */ = {
