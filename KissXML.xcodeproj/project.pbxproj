@@ -47,8 +47,8 @@
 		A72ABC7B151138AA00B78A14 /* DDXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLNode.h; sourceTree = "<group>"; };
 		A72ABC7C151138AA00B78A14 /* DDXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDXMLNode.m; sourceTree = "<group>"; };
 		A72ABC7E151138AA00B78A14 /* DDXMLPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDXMLPrivate.h; sourceTree = "<group>"; };
-		A7D9E4F71501A6A20031D4FA /* libKissXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKissXML.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		A7DDECC41502932400AD274C /* libKissXML.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKissXML.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7D9E4F71501A6A20031D4FA /* libiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7DDECC41502932400AD274C /* libOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOSX.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7DDECC61502932400AD274C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
 		A7DDECC91502932400AD274C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		A7DDECCA1502932400AD274C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
@@ -129,8 +129,8 @@
 		A7D9E4F81501A6A20031D4FA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A7D9E4F71501A6A20031D4FA /* libKissXML.a */,
-				A7DDECC41502932400AD274C /* libKissXML.a */,
+				A7D9E4F71501A6A20031D4FA /* libiOS.a */,
+				A7DDECC41502932400AD274C /* libOSX.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -188,9 +188,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		A7D9E4F61501A6A20031D4FA /* iOS */ = {
+		A7D9E4F61501A6A20031D4FA /* KissXMLiOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7D9E5041501A6A20031D4FA /* Build configuration list for PBXNativeTarget "iOS" */;
+			buildConfigurationList = A7D9E5041501A6A20031D4FA /* Build configuration list for PBXNativeTarget "KissXMLiOS" */;
 			buildPhases = (
 				A7D9E4F31501A6A20031D4FA /* Sources */,
 				A7D9E4F41501A6A20031D4FA /* Frameworks */,
@@ -200,14 +200,14 @@
 			);
 			dependencies = (
 			);
-			name = iOS;
+			name = KissXMLiOS;
 			productName = Model;
-			productReference = A7D9E4F71501A6A20031D4FA /* libKissXML.a */;
+			productReference = A7D9E4F71501A6A20031D4FA /* libiOS.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		A7DDECC31502932400AD274C /* OSX */ = {
+		A7DDECC31502932400AD274C /* KissXMLOSX */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7DDECD21502932400AD274C /* Build configuration list for PBXNativeTarget "OSX" */;
+			buildConfigurationList = A7DDECD21502932400AD274C /* Build configuration list for PBXNativeTarget "KissXMLOSX" */;
 			buildPhases = (
 				A7DDECC01502932400AD274C /* Sources */,
 				A7DDECC11502932400AD274C /* Frameworks */,
@@ -217,9 +217,9 @@
 			);
 			dependencies = (
 			);
-			name = OSX;
+			name = KissXMLOSX;
 			productName = "Model-Desktop";
-			productReference = A7DDECC41502932400AD274C /* libKissXML.a */;
+			productReference = A7DDECC41502932400AD274C /* libOSX.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -243,8 +243,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A7D9E4F61501A6A20031D4FA /* iOS */,
-				A7DDECC31502932400AD274C /* OSX */,
+				A7D9E4F61501A6A20031D4FA /* KissXMLiOS */,
+				A7DDECC31502932400AD274C /* KissXMLOSX */,
 			);
 		};
 /* End PBXProject section */
@@ -328,7 +328,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/Model.dst;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "${PROJECT_NAME}";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -338,7 +338,7 @@
 			buildSettings = {
 				DSTROOT = /tmp/Model.dst;
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_NAME = "${PROJECT_NAME}";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -354,7 +354,7 @@
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "${PROJECT_NAME}";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -369,7 +369,7 @@
 				);
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				PRODUCT_NAME = "${PROJECT_NAME}";
+				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -386,7 +386,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7D9E5041501A6A20031D4FA /* Build configuration list for PBXNativeTarget "iOS" */ = {
+		A7D9E5041501A6A20031D4FA /* Build configuration list for PBXNativeTarget "KissXMLiOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7D9E5051501A6A20031D4FA /* Debug */,
@@ -395,7 +395,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7DDECD21502932400AD274C /* Build configuration list for PBXNativeTarget "OSX" */ = {
+		A7DDECD21502932400AD274C /* Build configuration list for PBXNativeTarget "KissXMLOSX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A7DDECD31502932400AD274C /* Debug */,
